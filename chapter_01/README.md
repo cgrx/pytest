@@ -3,7 +3,7 @@
 ## Test Discovery
 1. Test discovery is the part of pytest execution where pytest goes off and finds which tests to run.
 2. Convention :
-    - Test files should be named `test_<something>.py` or `<something>_test.py`. 
+    - Test files should be named `test_<something>.py` or `<something>_test.py`.
     - Test methods and functions should be named `test_<something>`.
     - Test classes should be named `Test<Something>`.
 3. Test discovery is recursive. It will find all the tests in the current directory and all subdirectories.

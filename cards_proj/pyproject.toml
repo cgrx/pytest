@@ -36,4 +36,3 @@ Home = "https://github.com/okken/cards"
 
 [project.scripts]
 cards = "cards:app"
-
