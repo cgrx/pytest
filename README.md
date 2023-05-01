@@ -15,9 +15,10 @@
 ```shell
 mkdir .venv
 ```
-2. Activate virtual environment
+2. Create and activate virtual environment
 ```shell
-pipenv shell
+pipenv install
+source .venv/bin/activate
 ```
 3. Install dependencies
 ```shell
