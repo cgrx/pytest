@@ -1,6 +1,6 @@
 # Writing Test Functions
 
-## Knowlege Building Tests
+## Knowledge Building Tests
 1. When we stumble upon a new data-structure, we should write tests to understand how it works. These suits of tests are called knowledge building tests.
 2. The objective of these tests are not to test the correctness of the code, but to understand how the data-structure works.
    - We are not interested in the edge or corner cases.
