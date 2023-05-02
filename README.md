@@ -1,5 +1,11 @@
 # Python Testing with pytest
 
+## Index
+| Chapter | Description                                                                                        |
+|---------|----------------------------------------------------------------------------------------------------|
+| [Chapter 1](chapter_01/README.md) | • Getting Started with pytest<br> • Test Discovery<br> • Test Outcomes                             |
+| [Chapter 2](chapter_02/README.md) | • Knowledge building tests<br> • Assert statements<br> • Expected failures<br> • Structuring tests |
+
 ## Cheat Sheet
 | Command              | Description                                                          |
 |----------------------|----------------------------------------------------------------------|
