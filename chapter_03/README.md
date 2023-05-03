@@ -28,11 +28,22 @@
      the test function passed or failed.
 
 ## Tracing Fixture Execution
+1.
+
 ## Fixture Scope
+1.
+
 ## Sharing Fixtures
+1.
+
 ## Finding Fixtures
+1.
+
 ## Multiple Level Fixtures
+1.
+
 ## Multiple Fixtures per Test or Fixture
+1.
+
 ## Dynamic Fixture Scope
-## `autouse` Fixtures
-## Renaming Fixtures
+1.
