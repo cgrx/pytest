@@ -7,20 +7,24 @@
 | [Chapter 2](chapter_02/README.md) | • Knowledge building tests<br> • Assert statements<br> • Expected failures<br> • Structuring tests |
 
 ## Cheat Sheet
-| Command              | Description                                                          |
-|----------------------|----------------------------------------------------------------------|
-| `pytest <path>`      | Run all tests below somepath                                         |
-| `pytest test_mod.py` | Run tests in a module                                                |
-| `pytest test_mod.py::test_func` | Run a single test in a module                             |
-| `pytest --tb=<style>` | Traceback print mode (auto/long/short/line/native/no)               |
-| `pytest -q`          | Run in quiet mode                                                    |
-| `pytest -v`          | Run in verbose mode                                                  |
-| `pytest -vv`         | Run in more verbose mode and shows information during test failuers. |
+| Command              | Description                                                             |
+|----------------------|-------------------------------------------------------------------------|
+| `pytest <path>`      | Run all tests below somepath                                            |
+| `pytest test_mod.py` | Run tests in a module                                                   |
+| `pytest test_mod.py::test_func` | Run a single test in a module                                |
+| `pytest --tb=<style>` | Traceback print mode (auto/long/short/line/native/no)                  |
+| `pytest -q`          | Run in quiet mode                                                       |
+| `pytest -v`          | Run in verbose mode                                                     |
+| `pytest -vv`         | Run in more verbose mode and shows information during test failuers.    |
+| `pytest -s`          | Shortcut for `--capture=no`. Turns off output capture for passed tests. |
 
-| Method | Description |
-|--------| ----------- |
-| `pytest.fail()` | Explicitly fail a test |
-| `pytest.raises()` | Check that an exception is raised |
+
+| Method                          | Description                                                              |
+|---------------------------------|--------------------------------------------------------------------------|
+| `pytest.fail()`                 | Explicitly fail a test                                                   |
+| `pytest.raises()`               | Check that an exception is raised                                        |
+| `pytest.fixture(name=<name>)`   | Rename fixtures                                                          |
+| `@pytest.fixture(autouse=True)` | Run a fixture for all tests without being named by test/ another fixture |
 
 ## Setup
 1. Create local directory
