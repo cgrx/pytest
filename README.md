@@ -35,12 +35,15 @@
 | Fixture            | Description                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------|
 | `tmp_path`         | Function-scope fixture returns a `pathlib.Path` instance that points to a temporary directory           |
-| `tmp_path_factory` | Session-scope fixture returns a TempPathFactory object. Use `mktemp()` to create temporary directories. |
+| `tmp_path_factory` | Session-scope fixture returns a TempPathFactory object. Use `mktemp()` to create temporary directories  |
 | ` capsys`          | Temporarily disable normal output capture from pytest                                                   |
 | `capfd`            | Capture output from file descriptors 1 and 2                                                            |
 | `capsysbinary`     | Capture binary output                                                                                   |
 | `capfdbinary`      | Capture binary output from file descriptors 1 and 2                                                     |
 | `caplog`           | Capture log output                                                                                      |
+| `monkeypatch`      | Dynamically modify classes or modules during runtime                                                    |
+| `cache`            | Used to store and retrive values across test runs                                                       |
+| `pytestconfig`     | Access to configuration values, plugin manager, and plugin values                                       |
 
 ## Setup
 1. Create local directory
