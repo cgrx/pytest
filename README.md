@@ -6,7 +6,8 @@
 | [Chapter 1](chapter_01/README.md)  | • Getting Started with pytest<br> • Test Discovery<br> • Test Outcomes                                       |
 | [Chapter 2](chapter_02/README.md)  | • Knowledge building tests<br> • Assert statements<br> • Expected failures<br> • Structuring tests           |
 | [Chapter 3](chapter_03/README.md)  | • Fixtures<br> • Setup and Teardown<br> • Fixture Scope<br> • Sharing Fixtures<br> • Multiple Level Fixtures |
-| [Chapter 4](chapter_04/README.md)  | • Builtin Fixtures                                                                                           |
+| [Chapter 4](chapter_04/README.md)  | • `monkeypatch`                                                                                              |
+| [Chapter 5](chapter_05/README.md)  | • Parametrizing Functions<br> • Parametrizing Fixtures<br> • `pytest_generate_tests`                         |
 
 ## Cheat Sheet
 | Command                         | Description                                                             |
