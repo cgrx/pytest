@@ -1,11 +1,12 @@
 # Python Testing with pytest
 
 ## Index
-| Chapter | Description|
-|---------|------------|
-| [Chapter 1](chapter_01/README.md) | • Getting Started with pytest<br> • Test Discovery<br> • Test Outcomes |
-| [Chapter 2](chapter_02/README.md) | • Knowledge building tests<br> • Assert statements<br> • Expected failures<br> • Structuring tests |
-| [Chapter 3](chapter_03/README.md) | • Fixtures<br> • Setup and Teardown<br> • Fixture Scope<br> • Sharing Fixtures<br> • Multiple Level Fixtures |
+| Chapter                            | Description                                                                                                  |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [Chapter 1](chapter_01/README.md)  | • Getting Started with pytest<br> • Test Discovery<br> • Test Outcomes                                       |
+| [Chapter 2](chapter_02/README.md)  | • Knowledge building tests<br> • Assert statements<br> • Expected failures<br> • Structuring tests           |
+| [Chapter 3](chapter_03/README.md)  | • Fixtures<br> • Setup and Teardown<br> • Fixture Scope<br> • Sharing Fixtures<br> • Multiple Level Fixtures |
+| [Chapter 4](chapter_04/README.md)  | • Builtin Fixtures                                                                                           |
 
 ## Cheat Sheet
 | Command                         | Description                                                             |
@@ -21,6 +22,7 @@
 | `pytest --setup-show`           | Shows the order of operations of tests and fixtures                     |
 | `pytest --fixtures`             | Show available fixtures under `PWD`                                     |
 | `pytest --fixtures-per-test`    | Show available fixtures for a test                                      |
+| `pytest --basetemp=mydir`       | Change the base temporary directory for test execution.                 |
 
 | Method                            | Description                                                              |
 |-----------------------------------|--------------------------------------------------------------------------|
@@ -29,6 +31,16 @@
 | `pytest.fixture(name=<name>)`     | Rename fixtures                                                          |
 | `@pytest.fixture(autouse=True)`   | Run a fixture for all tests without being named by test/ another fixture |
 | `@pytest.fixture(scope=<scope>)`  | Set the scope of a fixture                                               |
+
+| Fixture            | Description                                                                                             |
+|--------------------|---------------------------------------------------------------------------------------------------------|
+| `tmp_path`         | Function-scope fixture returns a `pathlib.Path` instance that points to a temporary directory           |
+| `tmp_path_factory` | Session-scope fixture returns a TempPathFactory object. Use `mktemp()` to create temporary directories. |
+| ` capsys`          | Temporarily disable normal output capture from pytest                                                   |
+| `capfd`            | Capture output from file descriptors 1 and 2                                                            |
+| `capsysbinary`     | Capture binary output                                                                                   |
+| `capfdbinary`      | Capture binary output from file descriptors 1 and 2                                                     |
+| `caplog`           | Capture log output                                                                                      |
 
 ## Setup
 1. Create local directory
