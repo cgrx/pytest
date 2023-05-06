@@ -25,13 +25,16 @@
 | `pytest --fixtures-per-test`    | Show available fixtures for a test                                      |
 | `pytest --basetemp=mydir`       | Change the base temporary directory for test execution.                 |
 
-| Method                            | Description                                                              |
-|-----------------------------------|--------------------------------------------------------------------------|
-| `pytest.fail()`                   | Explicitly fail a test                                                   |
-| `pytest.raises()`                 | Check that an exception is raised                                        |
-| `pytest.fixture(name=<name>)`     | Rename fixtures                                                          |
-| `@pytest.fixture(autouse=True)`   | Run a fixture for all tests without being named by test/ another fixture |
-| `@pytest.fixture(scope=<scope>)`  | Set the scope of a fixture                                               |
+| Method                              | Description                                                              |
+|-------------------------------------|--------------------------------------------------------------------------|
+| `pytest.fail()`                     | Explicitly fail a test                                                   |
+| `pytest.raises()`                   | Check that an exception is raised                                        |
+| `pytest.fixture(name=<name>)`       | Rename fixtures                                                          |
+| `@pytest.fixture(autouse=True)`     | Run a fixture for all tests without being named by test/ another fixture |
+| `@pytest.fixture(scope=<scope>)`    | Set the scope of a fixture                                               |
+| `@pytest.fixture(params=<params>)`  | Parametrize using fixtures                                               |
+| `pytest_generate_tests(metafunc)`   | Parametrize using hook functions                                         |
+| `pytest.mark.parametrize(<params>)` | Parametrize a test using functions                                       |
 
 | Fixture            | Description                                                                                             |
 |--------------------|---------------------------------------------------------------------------------------------------------|
